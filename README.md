@@ -1,16 +1,38 @@
-# travel_app
+# 🏔️ Mountain Trip Flutter App
 
-A new Flutter project.
+The **Mountain Trip App** is a modern and elegant travel application built using **Flutter**. It provides users with a rich visual experience of welcome screens and allows them to explore trip packages like mountains, lakes, and forests through an animated and interactive UI.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🌟 Features
 
-A few resources to get you started if this is your first Flutter project:
+### ✅ Welcome Page Slider
+- Full-screen background images
+- Smooth horizontal swiping with `PageView`
+- Unique title, subtitle, and description for each screen
+- "Get Started" button on the final slide that takes users to the homepage
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### ✅ Animated Trip Carousel
+- Beautiful horizontally scrollable list of trips
+- Smooth animation scale using `Transform.scale`
+- Gradient overlays for text readability
+- Displays trip name, location, and price
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### ✅ Clean UI Components
+- Reusable widgets (`AppLargeText`, `AppText`, `ResponsiveButton`)
+- Uses modern design elements like blur, elevation, and shadows
+- Responsive to different screen sizes
+
+---
+
+## 🧭 Navigation Flow
+
+```text
+WelcomePage (Slider) 
+    |
+    |---> PageView (3 Screens)
+        |---> Explore Nature → Mountains
+        |---> Dive Into Adventure → Lakes
+        |---> Discover New Paths → Forests
+    |
+    --> Press "Get Started" → HomePage (Trip Slider)
